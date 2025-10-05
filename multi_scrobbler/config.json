@@ -1,0 +1,37 @@
+{
+  "name": "Multi-Scrobbler",
+  "version": "0.1.0",
+  "slug": "multi_scrobbler",
+  "description": "Scrobble plays from multiple sources to multiple clients using multi-scrobbler",
+  "url": "https://github.com/FoxxMD/multi-scrobbler",
+  "startup": "services",
+  "boot": "auto",
+  "arch": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "ports": {
+    "9078/tcp": 9078
+  },
+  "environment": {
+    "TZ": "UTC"
+  },
+  "options": {
+  },
+  "schema": {
+  },
+  "map": [
+    "config:rw",
+    "share:rw"
+  ],
+  "host_network": false,
+  "privileged": false,
+  "host_cbpi": false,
+  "host_dbus": false,
+  "ingress": false,
+  "ssl": false,
+  "webui": "http://[HOST]:9078",
+  "image": "foxxmd/multi-scrobbler:latest",
+  "boot_with_exception": false
+}
