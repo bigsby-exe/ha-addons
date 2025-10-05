@@ -1,0 +1,5 @@
+# Ignore Home Assistant add-on build artifacts
+*.pyc
+__pycache__/
+*.log
+*.db

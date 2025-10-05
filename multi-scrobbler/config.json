@@ -1,0 +1,19 @@
+{
+  "name": "Multi-Scrobbler",
+  "version": "1.0.0",
+  "slug": "multi-scrobbler",
+  "description": "Scrobble music plays from multiple sources to Last.fm and Listenbrainz.",
+  "url": "https://github.com/FoxxMD/multi-scrobbler",
+  "startup": "application",
+  "boot": "auto",
+  "webui": "http://[HOST]:[PORT:9078]",
+  "ingress": true,
+  "ingress_port": 9078,
+  "panel_icon": "mdi:music",
+  "panel_title": "Multi-Scrobbler",
+  "arch": ["amd64", "armv7", "aarch64"],
+  "map": ["config:rw", "ssl:ro"],
+  "options": {},
+  "schema": {},
+  "image": "ghcr.io/foxxmd/multi-scrobbler:latest"
+}
