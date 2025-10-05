@@ -1,5 +1,8 @@
 {
   "name": "bigsby_exe Add-ons",
   "url": "https://github.com/bigsby_exe/ha-addons",
-  "maintainer": "bigsby_exe"
+  "maintainer": "bigsby_exe",
+  "addons": [
+    "multi_scrobbler"
+  ]
 }
